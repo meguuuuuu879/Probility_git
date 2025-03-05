@@ -62,8 +62,6 @@ public class Mathema {
 
 	public String getAnswer() {
 
-		//String trueanswer=String.format("%.2f", answer);
-		//return this.answer;
 
 		return String.format("%.2f", this.answer);
 
