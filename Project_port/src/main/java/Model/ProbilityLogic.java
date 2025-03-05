@@ -42,7 +42,7 @@ public class ProbilityLogic {
 
 		for (int k = r; k <= n; k++) {
 
-			totalprobility += probility(n, k);//rではない
+			totalprobility += probility(n, k);
 			
 		}
 		//System.out.println("計算結果: " + totalprobility);
