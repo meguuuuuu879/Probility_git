@@ -1,7 +1,25 @@
 package Model;
 
 public class ProbilityLogic {
-	public double probility(int n ,int r) {
+	
+	/*
+	public double MathSetting(Mathema math) {
+		
+		return math.getPer(); 
+		
+		
+	}
+	
+public double MathSettingB(Mathema mathB) {
+		
+		return mathB.getNPer();
+		
+		
+	}
+*/
+
+	
+	public double probility(int n ,int r,Mathema math) {
 
 		double ans = 1;
 		double answer;
@@ -17,8 +35,12 @@ public class ProbilityLogic {
 
 		}
 
-		double result = Math.pow(0.05, r);
-		double result2 = Math.pow(0.95, n - r);
+		double result = Math.pow(math.getPer(),r);
+		double result2 = Math.pow(math.getNPer(), n - r);
+		
+		//double result = Math.pow(0.05, r);
+		//double result2 = Math.pow(0.95, n - r);
+
 
 		answer = 100 * (result2 * result * ans);
 		
@@ -42,7 +64,7 @@ public class ProbilityLogic {
 
 		for (int k = r; k <= n; k++) {
 
-			totalprobility += probility(n, k);
+			totalprobility += probility(n, k, math);//rではない
 			
 		}
 		//System.out.println("計算結果: " + totalprobility);
@@ -53,5 +75,5 @@ public class ProbilityLogic {
 	}
 
 }
-
+//https://github.com/meguuuuuu879/Probility_git/tree/main/Project_port/src/main/webapp
 

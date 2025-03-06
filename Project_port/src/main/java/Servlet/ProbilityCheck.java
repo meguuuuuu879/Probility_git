@@ -1,5 +1,3 @@
-//確率5%のくじをn回(変数:charange)引いた時、r回(変数:win)以上当たる時の確率を求めるアプリ
-
 package Servlet;
 
 import java.io.IOException;
@@ -30,6 +28,15 @@ public class ProbilityCheck extends HttpServlet {
 
 		String charange = request.getParameter("charange");
 		String win = request.getParameter("win");
+		
+		
+		
+		String per=request.getParameter("per");
+		
+	
+		
+		
+		
 		Mathema math = new Mathema();
 		
 	
@@ -38,6 +45,11 @@ public class ProbilityCheck extends HttpServlet {
 
 			math.setWin(Integer.parseInt(win));
 			math.setCharange(Integer.parseInt(charange));
+			
+			math.setPer(Double.parseDouble(per));
+			double nper=1-math.getPer();
+			math.setNPer(nper);
+			
 
 			//if (charange != "" && win != "") {
 
@@ -54,7 +66,7 @@ public class ProbilityCheck extends HttpServlet {
 				else if (charange != null && win != null&& charange.length()!=0&&win.length()!=0) {
 
 					ProbilityLogic probilityLogic = new ProbilityLogic();
-				
+			
 					probilityLogic.probilityAtLeast(math);
 					request.setAttribute("math", math);
 
