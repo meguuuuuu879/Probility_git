@@ -22,9 +22,14 @@ String errorMsg = (String) request.getAttribute("errorMsg");
 
 	<form action="ProbilityCheck" method="post">
 
-		<input type="text" name="charange">(回試行して)<br> <input
-			type="text" name="win">(回当たる)<br> <input type="submit"
-			value="送信">
+		<input type="text" name="charange">(試行する回数)<br>
+		 <input type="text" name="win">(当たる回数)<br> 
+			
+			
+			 <input type="text" name="per">(確率(%))<br> 
+		
+			
+			<input type="submit"value="送信">
 
 	</form>
 

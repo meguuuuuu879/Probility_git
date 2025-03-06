@@ -3,9 +3,10 @@ package Model;
 
 public class Mathema {
 
-	private int per, nper;
+	private double per, nper;
 
 	private int win, charange;
+	
 
 	double answer;
 
@@ -31,15 +32,22 @@ public class Mathema {
 		this.win = win;
 	}
 
-	public int getPer() {
+	public double getPer() {
 
 		return per;
 
 	}
 
-	public void setPer(int per) {
+	public void setPer(double per) {
 
-		this.per = per;
+		this.per = per/100;
+		//this.per = per/100;
+		
+	   //double numNPer=this.per;
+	  // double numNPer=1-this.per;
+	   
+	   
+	  //this.setNPer(numNPer);
 	}
 
 	public double getNPer() {
@@ -48,7 +56,7 @@ public class Mathema {
 
 	}
 
-	public void setNPer(int nper) {
+	public void setNPer(double nper) {
 
 		this.nper = nper;
 	}
@@ -62,6 +70,8 @@ public class Mathema {
 
 	public String getAnswer() {
 
+		//String trueanswer=String.format("%.2f", answer);
+		//return this.answer;
 
 		return String.format("%.2f", this.answer);
 
