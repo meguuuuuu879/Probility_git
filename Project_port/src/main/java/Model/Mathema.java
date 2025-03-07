@@ -41,13 +41,7 @@ public class Mathema {
 	public void setPer(double per) {
 
 		this.per = per/100;
-		//this.per = per/100;
 		
-	   //double numNPer=this.per;
-	  // double numNPer=1-this.per;
-	   
-	   
-	  //this.setNPer(numNPer);
 	}
 
 	public double getNPer() {
