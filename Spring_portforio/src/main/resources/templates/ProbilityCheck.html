@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+
+	<form th:action="@{/probilitycheckresult}" method="post">
+	
+
+		<h1>サイトへようこそ</h1>
+		<h2>当たりくじを(n回)引いた時のあたりの数(r回)とその時の確率(p%)を入力してください</h2>
+
+
+		<div>
+			<label for="charange">試行する回数(n回)</label>
+			<input type="number" name="charange" required>
+
+
+
+		</div>
+
+
+		<div>
+			<label for="win">当たる回数(r回)</label>
+			<input type="number" name="win" required>
+		</div>
+
+
+
+
+
+		<div>
+			<label for="per">確率(p%)</label>
+			<input type="number" name="per" required>
+		</div>
+
+		
+		<p th:if="${errorMsg}" th:text="${errorMsg}"></p>
+
+		<input type="submit" value="送信">
+
+
+
+
+	</form>
+
+</body>
+
+</html>
