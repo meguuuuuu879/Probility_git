@@ -2,56 +2,21 @@ package com.example.demo.model;
 
 import org.springframework.stereotype.Component;
 
+import lombok.Data;
 
 @Component
+@Data
 
 public class Mathema_spring {
 	private double per, nper;
 
 	private int win, charange;
-	
-	
 
 	double answer;
 
-	public int getCharange() {
-
-		return charange;
-
-	}
-
-	
-	public void setCharange(int charange) {
-
-		this.charange = charange;
-	}
-
-	public int getWin() {
-
-		return win;
-
-	}
-
-	public void setWin(int win) {
-
-		this.win = win;
-	}
-
-	public double getPer() {
-
-		return per;
-
-	}
-
 	public void setPer(double per) {
 
-		this.per = per/100;
-	
-	}
-
-	public double getNPer() {
-
-		return nper;
+		this.per = per / 100;
 
 	}
 
@@ -60,16 +25,13 @@ public class Mathema_spring {
 		this.nper = nper;
 	}
 
+	public double getNPer() {
 
-
-	public void setAnswer(double answer) {
-		this.answer = answer;
+		return nper;
 
 	}
 
 	public String getAnswer() {
-
-	
 
 		return String.format("%.3f", this.answer);
 
