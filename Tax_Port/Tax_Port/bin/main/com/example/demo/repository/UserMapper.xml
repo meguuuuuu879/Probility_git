@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.repository.UserMapper">
+
+    <!-- insert文だけ定義 -->
+    <!-- ユーザ情報を登録（INSERT） -->
+    <insert id="insert" parameterType="com.example.demo.entity.User">
+        INSERT INTO users (income, deducation, lank)
+        VALUES (#{income}, #{deducation}, #{lank})
+    </insert>
+
+</mapper>
