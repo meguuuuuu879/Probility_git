@@ -52,14 +52,14 @@ public class IncomeController {
 	
 
 		// 保存するためのエンティティ生成
-		User income = new User();
-		//income.setIncome(incomeValue);
-		//income.setDeduction(deduction);
-		//income.setRank(rank);
+		User user = new User();
+		user.setIncome(incomeValue);
+		user.setDeducation(deducation);
+		user.setLank(lank);
 
-		userService.insert(income); // DBに保存
+		userService.insert(user); // DBに保存
 
-		model.addAttribute("incomev", incomeValue);
+		model.addAttribute("incomeValue", incomeValue);
 		model.addAttribute("deducation", deducation);
 		model.addAttribute("lank", lank);
 
@@ -68,10 +68,10 @@ public class IncomeController {
 
 	}
 
+//http://localhost:8080/show
 
 
-
-
+/*
 	   @GetMapping("/test-insert")
 	    public String testInsert() {
 	        User user = new User();
@@ -83,6 +83,6 @@ public class IncomeController {
 	        userService.insert(user);
 
 	        return "OK";
-	    }
+	    }*/
 		
 	}//http://localhost:8080/test-insert
