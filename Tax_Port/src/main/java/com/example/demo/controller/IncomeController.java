@@ -36,13 +36,13 @@ public class IncomeController {
 			deducation = (int) (incomeValue * 0.4 - 100000);
 			lank = "B";
 		} else if (incomeValue <= 3600000) {
-			deducation = (int) (incomeValue * 0.3 - 80000);
+			deducation = (int) (incomeValue * 0.3 + 80000);
 			lank = "C";
 		} else if (incomeValue <= 6600000) {
-			deducation = (int) (incomeValue * 0.2 - 440000);
+			deducation = (int) (incomeValue * 0.2 + 440000);
 			lank = "D";
 		} else if (incomeValue <= 8500000) {
-			deducation = (int) (incomeValue * 0.1 - 1100000);
+			deducation = (int) (incomeValue * 0.1 + 1100000);
 			lank = "E";
 		} else {
 			deducation = 1950000;
