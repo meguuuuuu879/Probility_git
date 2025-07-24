@@ -9,6 +9,7 @@ spring_port
 
 finaltaxreturn(テスト用)
 確定申告における給与所得控除のプログラムをspringbootにて作成、DBに仮のデータを保存(使用したDB:pgadmin)
-
+参考サイト:https://www.keisan.nta.go.jp/r2yokuaru/cat2/cat21/cat213/cid160.html
 tax_port
 確定申告における給与所得控除のプログラムをspringbootにて作成、DBに保存(使用したDB:pgadmin)
+参考サイト:https://www.keisan.nta.go.jp/r2yokuaru/cat2/cat21/cat213/cid160.html
