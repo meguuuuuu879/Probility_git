@@ -1,7 +1,7 @@
 # Probility_git
 
 
-projectport
+project_port
 確率5%のくじをn回(変数:charange)引いた時、r回(変数:win)以上当たる時の確率を求めるアプリ、javaservletで作成
 
 spring_port
